@@ -1,0 +1,172 @@
+
+.TemperatureApp {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 250px;
+    height: 350px;
+
+    border-radius: 15px;
+    background-color: rgb(34, 34, 136);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+
+    background-color: rgb(89, 89, 236);
+    border: 2px solid white;
+    color: white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.btnsWrapper {
+    width: 180px;
+    margin-top: 25px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: gray;
+        
+    font-size: 24px;
+    color: white;
+}
+
+.btn:active {
+    background-color: rgb(55, 55, 55);
+    transition: all  .2s ease-in;
+}
+
+
+
+.plus-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.plus-enter-active  {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.plus-exit  {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.plus-exit-active  {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.plus-enter-active,
+.plus-exit-active {
+  transition: opacity 500ms, transform 500ms;
+}
+
+
+
+.minus-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.minus-enter-active  {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.minus-exit  {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.minus-exit-active  {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.minus-enter-active,
+.minus-exit-active {
+    transition: opacity 500ms, transform 500ms;
+}
+
+
+
+
+
+
+@keyframes deg-anim {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes deg-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+}
+
+/* @keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(130px);
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

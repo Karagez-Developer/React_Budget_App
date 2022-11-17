@@ -1,0 +1,157 @@
+
+.wrapper {
+    max-width: 900px;
+
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.search-block {
+    width: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.search-inp {
+    width: 450px;
+    height: 35px;
+
+    border: 1px solid green;
+    color: green;
+
+    padding: 10px;
+}
+
+.loupe-wrapper {
+    width: 50px;
+    height: 35px;
+    
+    text-align: center;
+    padding-top: 5px;
+
+    background-color: green;
+}
+
+.loupe {
+    width: 24px;
+    height: 24px;
+    
+    cursor: pointer;
+}
+
+.add-btn {
+    width: 140px;
+    height: 30px;
+
+    margin-top: 25px;
+    
+    border: 1px solid green;
+}
+
+ul {
+    margin-top: 50px;
+}
+
+.post {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid green;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post + .post {
+    margin-top: 15px;
+}
+
+.post-content {
+    width: 85%;
+}
+
+h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+.delete-btn:hover {
+    text-decoration: underline;
+}
+
+/* Add and remove animation */
+
+.post-enter-active {
+    animation: fade-in 1s forwards;
+}
+
+.post-exit-active {
+    animation: fade-out 1s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+}
+
+/* Form-sort */
+
+.form-sort {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.label-sort {
+    margin-left: 4px;
+}
+
+.select-sort {
+    margin-top: 10px;
+    border: 1px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

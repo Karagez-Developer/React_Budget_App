@@ -1,0 +1,29 @@
+.circle-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    
+    border-radius: 50%;
+    border: 3px dashed green;
+
+    animation: rotate_loader .5s infinite;
+}
+
+@keyframes rotate_loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+
